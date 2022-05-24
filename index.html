@@ -365,7 +365,9 @@
       window.addEventListener('load', function () {
         setVideoSource();
         firstNavLink.click();
-        window.scrollTo(0, 0);
+        setTimeout(function () {
+          window.scrollTo(0, 0);
+        }, 50)
 
       });
       window.addEventListener('resize', setVideoSource);
