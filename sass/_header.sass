@@ -1,0 +1,71 @@
+.header
+    position: relative
+    &__video
+        display: block
+        width: 100%
+    &__motto
+        position: absolute
+        top: 45%
+        left: 147px
+        transform: translateY(-50%)
+        color: #FFFFFF
+    &__title
+        width: 368px
+    &__paragraph
+        font-family: "freightbigcmp-pro"
+        font-size: 96px
+        max-width: 560px
+        line-height: 87px
+        margin-bottom: 62px
+    &__arrow
+        position: absolute
+        bottom: 20px
+        left: 50%
+        transform: translateX(-50%)
+        width: 20px
+        display: none
+        animation: opacity-pulse
+        animation-iteration-count: infinite
+        animation-duration: 2s
+    &__text
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+    &__popup-link
+        display: block
+        border: 1px solid #222222
+        width: 100%
+        height: 46px
+        line-height: 46px
+        margin: 0 auto
+        margin-top: 15px
+        font-size: 13px
+        text-decoration: none
+        color: #222222
+        text-align: center
+        transition: .3s
+        &:hover
+            background-color: #222222
+            color: white
+
+    &__link
+        display: block
+        width: 196px
+        height: 48px
+        color: #FFFFFF
+        font-size: 13px
+        text-align: center
+        line-height: 47px
+        text-decoration: none
+        background-color: #222222
+        transition: .3s
+        &:hover
+            background-color: black
+
+@keyframes opacity-pulse
+    0%
+        opacity: 1
+    50%
+        opacity: 0
+    100%
+        opacity: 1
